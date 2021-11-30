@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "242589185890",
+    "project_id": "garantias-4693f",
+    "storage_bucket": "garantias-4693f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242589185890:android:d086249b07027e1bed1e3b",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242589185890-shu136ntpgfv5iilabodl3bhj0fje4bi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf0StSCbYCvZUhdpXVUmjba7T6WVALshc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242589185890-shu136ntpgfv5iilabodl3bhj0fje4bi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
