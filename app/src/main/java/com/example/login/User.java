@@ -2,9 +2,10 @@ package com.example.login;
 
 public class User {
 
-    String nit,nombre,producto,dano;
+    String  nombre, producto, dano;
+    long nit;
 
-    public String getNit() {
+    public long getNit() {
         return nit;
     }
 
