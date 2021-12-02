@@ -2,8 +2,10 @@ package com.example.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -16,7 +18,7 @@ import com.google.firebase.storage.StorageReference;
 
 public class Bienvenida extends AppCompatActivity {
 
-   TextView texto;
+    Button recylerviewbtn;
 
 
     @Override
@@ -24,30 +26,21 @@ public class Bienvenida extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida);
 
-
-    }
-
-    public void consulta (View view){
-
-        texto = findViewById(R.id.textView3);
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("nombre");
-
-        myRef.addValueEventListener(new ValueEventListener() {
+        recylerviewbtn = findViewById(R.id.button2);
+        recylerviewbtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onClick(View v) {
 
-                String value = dataSnapshot.getValue(String.class);
-                texto.setText(value);
+                Intent i = new Intent(Bienvenida.this,GarantiasProceso.class);
+                startActivity(i);
+                finish();
 
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
 
             }
         });
+
+
     }
+
+
 }
